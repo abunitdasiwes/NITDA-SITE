@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    width: 1300px;
     margin: 0 auto;
     
 }
@@ -50,6 +50,7 @@ body {
 }
 
 .header .menus li a:hover{
+    transition: 0.6s ease;
     border-bottom: 2px solid rgb(8, 77, 8);
 }
 
@@ -61,6 +62,7 @@ body {
 
 .header .menus li .contact:hover {
     background: #fff;
+    transition: all .3s ease-in;
     color: rgb(8, 77, 8);
     border: 2px solid rgb(8, 77, 8);
 }
@@ -92,6 +94,7 @@ body {
     margin-bottom: 0;
     font-weight: 700;
     color: #fff;
+    text-shadow: 0 5px 10px rgba(8, 77, 8, .4);
 }
 
 .home .main p {
@@ -103,23 +106,45 @@ body {
     margin-top: 20px;
 }
 
-input[type="button"] {
+button{
     padding: 12px 15px;
     text-transform: capitalize;
     width: 200px;
     border-radius: 5px;
-    border: none;
-    background: linear-gradient( #71b7e6, #9659b6);
+    border: 2px solid rgba(1, 1, 1, 0);
+    background: rgb(8, 77, 8);
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 18px;
     color: #fff;
     cursor: pointer;
+    overflow: hidden;
+    position: relative;
 }
 
-.home .button input[type="button"]:hover {
-    background: linear-gradient(-135deg, #71b7e6, #9659b6);
-    cursor: pointer;
+button::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 5px;
+    top: 0;
+    left: -100%;
+    background-color: rgb(8, 77, 8);
+    border: 2px solid rgba(1, 1, 1, 0);
+}
+
+button:hover::before{
+    transition: all .6s ease-in-out;
+    background-color: rgb(8, 77, 8);
+    transform: translateX(201%);
+}
+
+button:hover {
+    background-color: #fff;
+    transition: all .3s ease-in;
+    border: 2px solid rgb(8, 77, 8);
+    color: rgb(8, 77, 8);
 }
 
 /* Home section ends here */
@@ -127,7 +152,7 @@ input[type="button"] {
 /* Services sectiojn begins here */
 
 .services{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 7rem auto;
 }
 
@@ -164,8 +189,9 @@ input[type="button"] {
     overflow: hidden;
     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .4);
     border-radius: .5rem;
-    /* padding: 20px 15px; */
+    padding: 10px 12px;
     position: relative;
+    
 }
 
 .box-container .box img{
@@ -187,4 +213,6 @@ input[type="button"] {
 .box-container .box .button{
     padding: 20px;
 }
+
+
 
