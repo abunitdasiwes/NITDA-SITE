@@ -219,30 +219,35 @@ button:hover {
 
 .about {
     margin-top: -80px;
+    background: url(./images/bg-2.jpg);
+    background-position: right;
+    background-size: cover;
 }
 
 .about-container{
-    background-position: center;
-    background-size: cover;
     width: 1400px;
     display: flex;
-    align-items: center;
     gap: 2rem;
     margin: 0 auto;
+    text-align: center;
 }
 
-.image-grid{
-    flex: 1 1 calc(60%);
+.grid-box{
+    flex: 1 1 calc(40%);
 }
 
 .content {
-    flex: 1 1 calc(40%);
-    text-align: center;
+    margin: 0 20px;
+    padding: 10px 20px;
 }
 
 .content .head{
     font-weight: 700;
     font-size: 25px;
+}
+
+.content button {
+    margin: 40px 0;
 }
 
 .image-grid {
@@ -261,7 +266,7 @@ button:hover {
 
 .image-grid img:hover{
     transition: all .5s linear;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .image-grid .img-one {
@@ -277,6 +282,17 @@ button:hover {
     grid-column: span 3;
 }
 
+
+
+@media (max-width: 940px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .image-grid{
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
