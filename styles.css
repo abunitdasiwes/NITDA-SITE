@@ -226,6 +226,7 @@ button:hover {
     background-size: cover;
     width: 1400px;
     display: flex;
+    align-items: center;
     gap: 2rem;
     margin: 0 auto;
 }
@@ -249,7 +250,7 @@ button:hover {
     gap: 1rem;
     padding: 20px;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .image-grid img{
