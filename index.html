@@ -3,157 +3,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
- 
-
-<link rel="stylesheet" href="./styles.css">
     <title>ABU NITDA IT Hub</title>
+
+    <!-- font awesome cdn  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+     <!-- custom css link here -->
+      <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
-    <!-- The header section begins here -->
-     <div id="header" class="header">
-        <div class="nav-container">
-            <div class="logo">
-                <img src="images/logo.png" alt="">
-            </div>
-            
-            <div class="navbar">
-                <ul class="menus">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#" class="contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-     </div>
-     <!-- the header section ends here -->
 
-     <!-- The home section starts here -->
-      <div id="home" class="home">
-        <div class="main">
-            <h2 class="heading">Welcome to ABU NITDA IT Hub</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem maiores labore odio cupiditate quo exercitationem tempora atque fugit, molestias, ipsam doloribus, eveniet soluta placeat officia debitis natus beatae mollitiaLorem ipsum dolor sit amet consectetur adipisicing elit. Est dolorem maiores labore odio cupiditate quo exercitationem tempora atque fugit, molestias, ipsam doloribus, eveniet soluta placeat officia debitis natus beatae mollitia.</p>
+    <div class="header" id="header">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
         </div>
-        <div class="button">
-            <button class="btn">learn more</button>
-        </div>
-      </div>
-     <!-- The home section ends here -->
 
-     <!-- the services section starts here -->
-<div class="services" id="services">
-    <h1 class="heading">Our <span>Services</span></h1>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">services</a>
+            <a href="#about">about us</a>
+            <a href="#testimonials">testimonials</a>
+            <a href="#faqs">FAQs</a>
+            <button type="button" class="btn">contact us</button>
+        </div>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+        </div>
+
+       <form action="" class="search-form">
+            <input type="search"  id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+       </form>
+    </div>
+
+    <!-- custom javaScript link  -->
+
+    <!-- home section starts -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h3>welcome to abu nitda it hub</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, corporis temporibus tempore odit, vitae delectus suscipit placeat sequi voluptas nam consectetur, error consequatur quia laborum voluptate qui alias vero ex!</p>
+
+            <a href="#" class="btn">learn more</a>
+        </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- services section starts -->
+
+    <section class="services" id="services">
+        <h3 class="heading">our <span>services</span></h3>
+
         <div class="box-container">
-
             <div class="box">
-                <img src="./images/Bootcamp.jpg" alt="">
+                <div class="image">
+                    <img src="./images/Bootcamp.jpg" alt="">
+                </div>
                 <div class="contents">
                     <h3>Bootcamps</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque facilis sequi, exercitationem numquam harum cupiditate corrupti fuga ipsam adipisci quos voluptates optio vero laudantium officia ratione delectus, repellendus veniam.</p>
-                </div>
-                <div class="button">
-                    <button class="btn">Learn More</button>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptate ipsa aliquam cumque quisquam? Officiis quidem qui enim debitis doloribus.</p>
+                    <a href="#" class="btn">learn more</a>
                 </div>
             </div>
-
+    
             <div class="box">
-                <img src="./images/consultation.jpg" alt="">
-                <div class="contents">
-                    <h3>Consultation</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque facilis sequi, exercitationem numquam harum cupiditate corrupti fuga ipsam adipisci quos voluptates optio vero laudantium officia ratione delectus, repellendus veniam.</p>
+                <div class="image">
+                    <img src="./images/consultation.jpg" alt="">
                 </div>
-                <div class="button">
-                    <button class="btn">Learn More</button>
+                <div class="contents">
+                    <h3>consultation</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptate ipsa aliquam cumque quisquam? Officiis quidem qui enim debitis doloribus.</p>
+                    <a href="#" class="btn">learn more</a>
                 </div>
             </div>
-
-
+    
+    
             <div class="box">
-                <img src="./images/SIWES training.jpg" alt="">
-                <div class="contents">
-                    <h3>SIWES Training</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque facilis sequi, exercitationem numquam harum cupiditate corrupti fuga ipsam adipisci quos voluptates optio vero laudantium officia ratione delectus, repellendus veniam.</p>
+                <div class="image">
+                    <img src="./images/SIWES training.jpg" alt="">
                 </div>
-                <div class="button">
-                    <button class="btn">Learn More</button>
+                <div class="contents">
+                    <h3>SIWES training</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptate ipsa aliquam cumque quisquam? Officiis quidem qui enim debitis doloribus.</p>
+                    <a href="#" class="btn">learn more</a>
                 </div>
             </div>
-
-
+    
+    
             <div class="box">
-                <img src="./images/mentorship.jpg" alt="">
-                <div class="contents">
-                    <h3>Mentorship</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque facilis sequi, exercitationem numquam harum cupiditate corrupti fuga ipsam adipisci quos voluptates optio vero laudantium officia ratione delectus, repellendus veniam.</p>
+                <div class="image">
+                    <img src="./images/mentorship.jpg" alt="">
                 </div>
-                <div class="button">
-                    <button class="btn">Learn More</button>
+                <div class="contents">
+                    <h3>mentorship</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptate ipsa aliquam cumque quisquam? Officiis quidem qui enim debitis doloribus.</p>
+                    <a href="#" class="btn">learn more</a>
                 </div>
             </div>
-
-
+    
+    
             <div class="box">
-                <img src="./images/pcb.jpg" alt="">
-                <div class="contents">
-                    <h3>PCB Design</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque facilis sequi, exercitationem numquam harum cupiditate corrupti fuga ipsam adipisci quos voluptates optio vero laudantium officia ratione delectus, repellendus veniam.</p>
+                <div class="image">
+                    <img src="./images/pcb.jpg" alt="">
                 </div>
-                <div class="button">
-                    <button class="btn">Learn More</button>
+                <div class="contents">
+                    <h3>pcb design</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptate ipsa aliquam cumque quisquam? Officiis quidem qui enim debitis doloribus.</p>
+                    <a href="#" class="btn">learn more</a>
                 </div>
             </div>
-
-
+    
             <div class="box">
-                <img src="./images/software-development.jpg" alt="">
-                <div class="contents">
-                    <h3>Software Development</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur itaque facilis sequi, exercitationem numquam harum cupiditate corrupti fuga ipsam adipisci quos voluptates optio vero laudantium officia ratione delectus, repellendus veniam.</p>
+                <div class="image">
+                    <img src="./images/software-development.jpg" alt="">
                 </div>
-                <div class="button">
-                    <button class="btn">Learn More</button>
+                <div class="contents">
+                    <h3>software development</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure voluptate ipsa aliquam cumque quisquam? Officiis quidem qui enim debitis doloribus.</p>
+                    <a href="#" class="btn">learn more</a>
                 </div>
             </div>
-
         </div>
-    </div>
 
-     <!-- the services section ends here -->
+    </section>
 
-     <!-- About section starts here -->
+     <!-- services section ends -->
 
-    <div class="about" id="about">
-        <h1 class="heading">About <span>Us</span></h1>
-        <div class="about-container">
-            <div class="image-grid  grid-box">
-                <div class="img-one">
+      <!-- About section starts -->
+
+      <section class="about" id="about">
+        <h3 class="heading">about <span>us</span></h3>
+        <div class="box-container">
+
+            <div class="image-grid">
+                <div class="grid-box img-1">
                     <img src="./images/vr-img.jpg" alt="">
                 </div>
-
-                <div class="img-two">
+                
+                <div class="grid-box img-2">
                     <img src="./images/img-7.jpg" alt="">
                 </div>
-
-                <div class="img-three">
+    
+                <div class="grid-box img-3">
                     <img src="./images/img-6.jpg" alt="">
                 </div>
-
+    
             </div>
-            <div class="content grid-box">
-                <div class="head">Why ABU NITDA IT Hub?</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel repellendus cupiditate aperiam fugit accusantium, molestiae itaque inventore ea asperiores quo id qui quibusdam quam ullam blanditiis obcaecati, beatae quas, cum ex. Illo repudiandae nostrum eligendi.</p>
+    
+            <div class="contents">
+                <h3>why abu nitda it hub?</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quam expedita aliquid adipisci doloribus rerum exercitationem ratione autem odio quo?</p>
+                <a href="#" class="btn">learn more</a>
 
-                <button>Read More</button>
+                <div class="portfolio">
+                    <div class="one">
+                        <span>30+</span>
+                        <p>SIWES <br>students</p>
+                    </div>
 
+                    <div class="two">
+                        <span>10+</span>
+                        <p>Sponsors <br> & Partners</p>
+                    </div>
+
+                    <div class="three">
+                        <span>20+</span>
+                        <p>Bootcamps <br>organized</p>
+                    </div>
+
+                    
+                </div>
             </div>
+
+            
+
+
         </div>
-    </div>
+      </section>
 
-     <!-- About section ends here -->
+      <!-- About section ends -->
 
-
+    <script src="./script.js"></script>
+    
 </body>
 </html>
