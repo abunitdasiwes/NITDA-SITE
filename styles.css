@@ -224,14 +224,6 @@ section {
     margin-bottom: 1rem;
 }
 
-.services .box p{
-    font-size: 1.7rem;
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 2.5rem;
-}
-
-
 .services .box:hover img {
     transition: .4s linear;
     transform: translateY(-110%);
